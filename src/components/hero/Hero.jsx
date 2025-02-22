@@ -19,11 +19,11 @@ import "./slider.css";
 const mySlider = [
   {
     text: "MEN",
-    link: "${process.env.PUBLIC_URL}../../../public/images/banner-15.jpg",
+    link: "src/components/assets/banner-15.jpg",
   },
   {
     text: "WOMEN",
-    link: "${process.env.PUBLIC_URL}../../../public/images/banner-25.jpg",
+    link: "src/components/assets/banner-25.jpg",
   },
 ];
 
@@ -115,7 +115,7 @@ export default function Hero() {
           <Box sx={{ position: "relative" }}>
             <img
               width={"100%"}
-              src="${process.env.PUBLIC_URL}../../../public/images/banner-17.jpg"
+              src="src/components/assets/banner-17.jpg"
               alt=""
             />
             <Stack
@@ -173,7 +173,7 @@ export default function Hero() {
           <Box sx={{ position: "relative" }}>
             <img
               width={"100%"}
-              src="${process.env.PUBLIC_URL}../../../public/images/banner-16.jpg"
+              src="src/components/assets/banner-16.jpg"
               alt=""
             />
             <Stack

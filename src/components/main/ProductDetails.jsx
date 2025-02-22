@@ -12,11 +12,7 @@ export default function ProductDetails() {
         flexDirection: { xs: "column", sm: "row" },
       }}>
       <Box sx={{ display: "flex" }}>
-        <img
-          width={300}
-          src={"${process.env.PUBLIC_URL}../../../public/images/1.jpg"}
-          alt=""
-        />
+        <img width={300} src={"src/components/assets/1.jpg"} alt="" />
       </Box>
       <Box sx={{ textAlign: { xs: "center", sm: "left" } }}>
         <Typography variant="h5">WOMAN'S FASHION</Typography>
@@ -33,21 +29,20 @@ export default function ProductDetails() {
           direction={"row"}
           gap={1}
           my={2}>
-          {[
-            "${process.env.PUBLIC_URL}../../../public/images/1.jpg",
-            "../../../public/images/2.jpg",
-          ].map((item) => {
-            return (
-              <img
-                style={{ borderRadius: 3 }}
-                height={100}
-                width={90}
-                key={item}
-                src={item}
-                alt=""
-              />
-            );
-          })}
+          {["src/components/assets/1.jpg", "src/components/assets/2.jpg"].map(
+            (item) => {
+              return (
+                <img
+                  style={{ borderRadius: 3 }}
+                  height={100}
+                  width={90}
+                  key={item}
+                  src={item}
+                  alt=""
+                />
+              );
+            }
+          )}
         </Stack>
 
         <Button
